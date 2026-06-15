@@ -83,10 +83,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Global Safety Enterprises (P) Ltd — Fire & Safety Solutions" },
       { name: "description", content: "Authorized distributor of fire alarm systems, PA systems, fire extinguishers, hydrant systems, valves, cables & fire doors across India." },
       { name: "author", content: "Global Safety Enterprises (P) Ltd" },
-      { property: "og:title", content: "Global Safety Enterprises (P) Ltd" },
-      { property: "og:description", content: "Trusted fire safety solutions — alarms, extinguishers, hydrants, PA systems, fire doors, AMC & installation." },
+      { property: "og:title", content: "Global Safety Enterprises (P) Ltd — Fire & Safety Solutions" },
+      { property: "og:description", content: "Authorized distributor of fire alarm systems, PA systems, fire extinguishers, hydrant systems, valves, cables & fire doors across India." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Global Safety Enterprises (P) Ltd — Fire & Safety Solutions" },
+      { name: "twitter:description", content: "Authorized distributor of fire alarm systems, PA systems, fire extinguishers, hydrant systems, valves, cables & fire doors across India." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/70992ada-f725-4ffe-a810-d2660e5c0156/id-preview-28aab391--0e7b5588-21d4-4013-8ad1-8e336101ddcc.lovable.app-1781501641338.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/70992ada-f725-4ffe-a810-d2660e5c0156/id-preview-28aab391--0e7b5588-21d4-4013-8ad1-8e336101ddcc.lovable.app-1781501641338.png" },
     ],
     links: [
       {
