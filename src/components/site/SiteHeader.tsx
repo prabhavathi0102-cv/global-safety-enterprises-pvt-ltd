@@ -20,8 +20,8 @@ export function SiteHeader() {
       <div className="bg-primary-deep text-primary-foreground text-xs">
         <div className="container mx-auto px-4 py-2 flex items-center justify-between">
           <span className="hidden sm:inline">FSAI Corporate Member • Authorized Distributor across India</span>
-          <a href="tel:+919840655558" className="inline-flex items-center gap-2 font-medium hover:text-accent-glow transition-smooth">
-            <Phone className="h-3.5 w-3.5" /> +91 98406 55558
+          <a href="tel:+919841781060" className="inline-flex items-center gap-2 font-medium hover:text-accent-glow transition-smooth">
+            <Phone className="h-3.5 w-3.5" /> +91 98417 81060
           </a>
         </div>
       </div>

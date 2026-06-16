@@ -62,7 +62,7 @@ export function SiteFooter() {
           <h4 className="font-display font-semibold mb-4 text-base">Contact</h4>
           <ul className="space-y-3 text-sm opacity-85">
             <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-accent-glow" /> 295, M.K.N Road, Alandur, Chennai - 600016</li>
-            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-accent-glow" /> <a href="tel:+919840655558" className="hover:text-accent-glow">+91 98406 55558</a></li>
+            <li className="flex gap-2"><Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-accent-glow" /> <a href="tel:+919841781060" className="hover:text-accent-glow">+91 98417 81060</a></li>
             <li className="flex gap-2"><Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-accent-glow" /> <a href="mailto:info@globalsafetys.in" className="hover:text-accent-glow break-all">info@globalsafetys.in</a></li>
           </ul>
         </div>

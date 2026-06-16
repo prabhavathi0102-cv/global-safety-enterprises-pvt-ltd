@@ -13,15 +13,15 @@ const QUICK = [
 function botReply(input: string): string {
   const t = input.toLowerCase();
   if (t.includes("electrical")) return "For electrical fires (Class C), we recommend CO2 or Clean Agent extinguishers — both are non-conductive and leave no residue. We stock 2kg, 4.5kg & 6.8kg CO2 models from Safex.";
-  if (t.includes("cost") || t.includes("price") || t.includes("quote") || t.includes("quotation")) return "Pricing depends on site area, panel type (conventional/addressable) and detector count. Please share your requirement via the Contact page or call +91 98406 55558 — we send detailed quotes within 24 hours.";
+  if (t.includes("cost") || t.includes("price") || t.includes("quote") || t.includes("quotation")) return "Pricing depends on site area, panel type (conventional/addressable) and detector count. Please share your requirement via the Contact page or call +91 98417 81060 — we send detailed quotes within 24 hours.";
   if (t.includes("amc") || t.includes("maintenance")) return "Yes — we offer comprehensive AMC contracts covering preventive maintenance, quarterly inspections, and emergency repairs for fire alarms, hydrants, extinguishers and PA systems.";
   if (t.includes("hydrant")) return "A hydrant system uses pressurized water through landing valves, hose reels and pipework to fight large fires. We supply Omex landing valves, hose reels, hoses and sprinklers, with full installation.";
   if (t.includes("alarm")) return "We supply Conventional & Addressable Fire Alarm panels from Ravel, plus smoke/heat detectors and manual call points. Installation, commissioning and AMC included.";
   if (t.includes("pa") || t.includes("public address")) return "We are authorized distributors for Honeywell PA & Voice Evacuation systems — speakers, amplifiers, BGM and emergency announcement systems.";
   if (t.includes("install")) return "We provide turnkey installation for fire alarms, hydrants, PA systems and fire doors with certified technicians and post-install commissioning support.";
-  if (t.includes("hour") || t.includes("open")) return "Office hours: Mon–Sat, 9:30 AM – 6:30 PM. Emergency support: 24×7 on +91 98406 55558.";
+  if (t.includes("hour") || t.includes("open")) return "Office hours: Mon–Sat, 9:30 AM – 6:30 PM. Emergency support: 24×7 on +91 98417 81060.";
   if (t.includes("contact") || t.includes("address")) return "Chennai: 295, M.K.N Road, Alandur, Chennai 600016. Tirupur: 3/2, Govindarajulu St, Avinashi Rd, Tirupur 641602. Email: info@globalsafetys.in";
-  return "Thanks for your message! I can help with product recommendations, AMC, installation, quotes and contact details. You can also call +91 98406 55558 or use the Contact form for a personalised response.";
+  return "Thanks for your message! I can help with product recommendations, AMC, installation, quotes and contact details. You can also call +91 98417 81060 or use the Contact form for a personalised response.";
 }
 
 export function FloatingActions() {
@@ -43,7 +43,7 @@ export function FloatingActions() {
       {/* Floating action buttons */}
       <div className="fixed right-4 bottom-4 z-50 flex flex-col gap-3 items-end">
         <a
-          href="https://wa.me/919840655558"
+          href="https://wa.me/919841781060"
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp"
@@ -52,7 +52,7 @@ export function FloatingActions() {
           <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current" aria-hidden><path d="M20.52 3.48A11.86 11.86 0 0012.04 0C5.5 0 .22 5.28.22 11.82c0 2.08.55 4.11 1.6 5.9L0 24l6.45-1.78a11.8 11.8 0 005.59 1.43h.01c6.54 0 11.82-5.28 11.82-11.82a11.74 11.74 0 00-3.35-8.35zM12.05 21.3h-.01a9.46 9.46 0 01-4.82-1.32l-.34-.2-3.83 1.06 1.02-3.74-.22-.36a9.45 9.45 0 1117.65-4.93 9.46 9.46 0 01-9.45 9.49zm5.41-7.07c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.9-2.18-.24-.58-.49-.5-.66-.51l-.56-.01c-.2 0-.52.07-.79.37-.27.3-1.03 1-1.03 2.44s1.06 2.83 1.2 3.03c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.49 1.68.62.7.22 1.34.19 1.84.12.56-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.34z"/></svg>
         </a>
         <a
-          href="tel:+919840655558"
+          href="tel:+919841781060"
           aria-label="Call now"
           className="h-12 w-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-110 transition-smooth"
         >
