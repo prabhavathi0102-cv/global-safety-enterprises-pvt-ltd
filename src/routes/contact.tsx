@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Global Safety Enterprises (P) Ltd" },
-      { name: "description", content: "Get in touch with Global Safety Enterprises in Chennai & Tirupur. Call +91 98406 55558 or email info@globalsafetys.in for quotes & support." },
+      { name: "description", content: "Get in touch with Global Safety Enterprises in Chennai & Tirupur. Call +91 98417 81060 or email info@globalsafetys.in for quotes & support." },
     ],
   }),
   component: ContactPage,
@@ -34,12 +34,12 @@ function ContactPage() {
           <div className="rounded-2xl bg-card border border-border p-6 shadow-card">
             <div className="h-12 w-12 rounded-xl bg-primary text-primary-foreground flex items-center justify-center mb-4"><User className="h-6 w-6" /></div>
             <div className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">Managing Director</div>
-            <div className="mt-1 font-display text-lg font-semibold text-primary">V. Sivasankar</div>
+            <div className="mt-1 font-display text-lg font-semibold text-primary">Prabhavathi Shanmugam</div>
           </div>
           <div className="rounded-2xl bg-card border border-border p-6 shadow-card">
             <div className="h-12 w-12 rounded-xl bg-fire-gradient text-accent-foreground flex items-center justify-center shadow-fire mb-4"><Phone className="h-6 w-6" /></div>
             <div className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">Call</div>
-            <a href="tel:+919840655558" className="block mt-1 font-display text-lg font-semibold text-primary hover:text-accent">+91 98406 55558</a>
+            <a href="tel:+919841781060" className="block mt-1 font-display text-lg font-semibold text-primary hover:text-accent">+91 98417 81060</a>
           </div>
           <div className="rounded-2xl bg-card border border-border p-6 shadow-card">
             <div className="h-12 w-12 rounded-xl bg-primary text-primary-foreground flex items-center justify-center mb-4"><Mail className="h-6 w-6" /></div>
