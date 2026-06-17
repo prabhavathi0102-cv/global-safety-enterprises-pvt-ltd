@@ -20,6 +20,13 @@ export const submitEnquiry = createServerFn({ method: "POST" })
     const payload = {
       timestamp: new Date().toISOString(),
       ...data,
+      // Aliases so Apps Scripts using either naming convention work
+      name: data.customerName,
+      customer_name: data.customerName,
+      customerName: data.customerName,
+      company: data.companyName,
+      company_name: data.companyName,
+      companyName: data.companyName,
     };
 
     const res = await fetch(url, {
