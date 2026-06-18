@@ -63,9 +63,10 @@ export function FloatingActions() {
         <button
           aria-label="Open chat"
           onClick={() => setOpen((v) => !v)}
-          className="h-14 w-14 rounded-full bg-fire-gradient text-accent-foreground flex items-center justify-center shadow-fire animate-pulse-ring hover:scale-110 transition-smooth"
+          className="h-12 pl-3 pr-4 rounded-full bg-fire-gradient text-accent-foreground flex items-center gap-2 shadow-fire animate-pulse-ring hover:scale-105 transition-smooth"
         >
           {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
+          <span className="text-sm font-semibold whitespace-nowrap">AssistMe</span>
         </button>
       </div>
 
@@ -77,7 +78,7 @@ export function FloatingActions() {
               <Flame className="h-5 w-5 animate-flame" />
             </div>
             <div>
-              <div className="font-display font-semibold">AssitMe</div>
+              <div className="font-display font-semibold">AssistMe</div>
               <div className="text-xs opacity-80">Typically replies instantly</div>
             </div>
           </div>
