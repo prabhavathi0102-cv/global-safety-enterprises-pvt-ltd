@@ -77,7 +77,7 @@ export function FloatingActions() {
               <Flame className="h-5 w-5 animate-flame" />
             </div>
             <div>
-              <div className="font-display font-semibold">Fire Safety Assistant</div>
+              <div className="font-display font-semibold">AssitMe</div>
               <div className="text-xs opacity-80">Typically replies instantly</div>
             </div>
           </div>
