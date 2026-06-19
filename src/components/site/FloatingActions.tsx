@@ -75,7 +75,7 @@ export function FloatingActions() {
         <div className="fixed right-4 bottom-24 z-50 w-[92vw] max-w-sm rounded-2xl bg-card shadow-card-hover border border-border overflow-hidden animate-float-up">
           <div className="bg-brand-gradient text-primary-foreground p-4 flex items-center gap-3">
             <div className="h-10 w-10 rounded-full bg-white/15 flex items-center justify-center">
-              <Flame className="h-5 w-5 animate-flame" />
+              <Bot className="h-5 w-5" />
             </div>
             <div>
               <div className="font-display font-semibold">AssistMe</div>
