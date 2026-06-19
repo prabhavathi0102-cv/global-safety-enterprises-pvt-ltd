@@ -43,7 +43,7 @@ export function FloatingActions() {
       {/* Floating action buttons */}
       <div className="fixed right-4 bottom-4 z-50 flex flex-col gap-3 items-end">
         <a
-          href="https://wa.me/919841781060?text=Hello%20I%20am%20interested%20in%20your%20service%2C%20Please%20call%20me%20back"
+          href="https://wa.me/919841781060?text=Hello%2C%20I%20am%20interested%20in%20your%20service%2C%20Please%20call%20me%20back"
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp"
