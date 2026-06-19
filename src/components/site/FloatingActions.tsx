@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, Phone, X, Send, Flame } from "lucide-react";
+import { MessageCircle, Phone, X, Send, Bot } from "lucide-react";
 
 type Msg = { role: "user" | "bot"; text: string };
 
@@ -46,27 +46,27 @@ export function FloatingActions() {
           href="https://wa.me/919841781060"
           target="_blank"
           rel="noreferrer"
-          aria-label="WhatsApp +91 98417 81060"
-          className="group h-12 pl-3 pr-4 rounded-full bg-[#25D366] text-white flex items-center gap-2 shadow-lg hover:scale-105 transition-smooth"
+          aria-label="WhatsApp"
+          title="WhatsApp"
+          className="h-14 w-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-smooth"
         >
           <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current" aria-hidden><path d="M20.52 3.48A11.86 11.86 0 0012.04 0C5.5 0 .22 5.28.22 11.82c0 2.08.55 4.11 1.6 5.9L0 24l6.45-1.78a11.8 11.8 0 005.59 1.43h.01c6.54 0 11.82-5.28 11.82-11.82a11.74 11.74 0 00-3.35-8.35zM12.05 21.3h-.01a9.46 9.46 0 01-4.82-1.32l-.34-.2-3.83 1.06 1.02-3.74-.22-.36a9.45 9.45 0 1117.65-4.93 9.46 9.46 0 01-9.45 9.49zm5.41-7.07c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.9-2.18-.24-.58-.49-.5-.66-.51l-.56-.01c-.2 0-.52.07-.79.37-.27.3-1.03 1-1.03 2.44s1.06 2.83 1.2 3.03c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.49 1.68.62.7.22 1.34.19 1.84.12.56-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.34z"/></svg>
-          <span className="text-sm font-semibold whitespace-nowrap">+91 98417 81060</span>
         </a>
         <a
           href="tel:+919841781060"
-          aria-label="Call +91 98417 81060"
-          className="h-12 pl-3 pr-4 rounded-full bg-primary text-primary-foreground flex items-center gap-2 shadow-lg hover:scale-105 transition-smooth"
+          aria-label="Call"
+          title="Call"
+          className="h-14 w-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-105 transition-smooth"
         >
           <Phone className="h-5 w-5" />
-          <span className="text-sm font-semibold whitespace-nowrap">+91 98417 81060</span>
         </a>
         <button
           aria-label="Open chat"
+          title="Any help?"
           onClick={() => setOpen((v) => !v)}
-          className="h-12 pl-3 pr-4 rounded-full bg-fire-gradient text-accent-foreground flex items-center gap-2 shadow-fire animate-pulse-ring hover:scale-105 transition-smooth"
+          className="h-14 w-14 rounded-full bg-fire-gradient text-accent-foreground flex items-center justify-center shadow-fire animate-pulse-ring hover:scale-105 transition-smooth"
         >
           {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-          <span className="text-sm font-semibold whitespace-nowrap">AssistMe</span>
         </button>
       </div>
 
@@ -75,7 +75,7 @@ export function FloatingActions() {
         <div className="fixed right-4 bottom-24 z-50 w-[92vw] max-w-sm rounded-2xl bg-card shadow-card-hover border border-border overflow-hidden animate-float-up">
           <div className="bg-brand-gradient text-primary-foreground p-4 flex items-center gap-3">
             <div className="h-10 w-10 rounded-full bg-white/15 flex items-center justify-center">
-              <Flame className="h-5 w-5 animate-flame" />
+              <Bot className="h-5 w-5" />
             </div>
             <div>
               <div className="font-display font-semibold">AssistMe</div>
