@@ -24,6 +24,11 @@ function PaymentPage() {
   const [invoice, setInvoice] = useState("");
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [cardName, setCardName] = useState("");
+  const [cardExpiry, setCardExpiry] = useState("");
+  const [cardCvv, setCardCvv] = useState("");
+  const [bank, setBank] = useState("");
   const [done, setDone] = useState(false);
 
   function pay(e: React.FormEvent) {
@@ -97,6 +102,39 @@ function PaymentPage() {
                   <div className="font-semibold text-primary">Scan UPI QR</div>
                   <div className="text-muted-foreground">Or use UPI ID: <code className="bg-card px-1.5 py-0.5 rounded">globalsafety@upi</code></div>
                 </div>
+              </div>
+            )}
+
+            {method === "card" && (
+              <div className="mt-6 rounded-xl bg-secondary/60 p-5 grid sm:grid-cols-2 gap-4">
+                <div className="sm:col-span-2">
+                  <Field label="Card Number" value={cardNumber} onChange={(v) => setCardNumber(v.replace(/[^0-9 ]/g, "").slice(0, 19))} placeholder="1234 5678 9012 3456" required />
+                </div>
+                <div className="sm:col-span-2">
+                  <Field label="Name on Card" value={cardName} onChange={setCardName} placeholder="As printed on card" required />
+                </div>
+                <Field label="Expiry (MM/YY)" value={cardExpiry} onChange={(v) => setCardExpiry(v.replace(/[^0-9/]/g, "").slice(0, 5))} placeholder="08/28" required />
+                <Field label="CVV" value={cardCvv} onChange={(v) => setCardCvv(v.replace(/[^0-9]/g, "").slice(0, 4))} placeholder="123" type="password" required />
+              </div>
+            )}
+
+            {method === "nb" && (
+              <div className="mt-6 rounded-xl bg-secondary/60 p-5">
+                <label className="block">
+                  <span className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1.5">Select Bank</span>
+                  <select
+                    value={bank}
+                    onChange={(e) => setBank(e.target.value)}
+                    required
+                    className="w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                  >
+                    <option value="">-- Choose your bank --</option>
+                    {["State Bank of India", "HDFC Bank", "ICICI Bank", "Axis Bank", "Kotak Mahindra Bank", "Punjab National Bank", "Bank of Baroda", "Canara Bank", "Union Bank of India", "IndusInd Bank", "Yes Bank", "IDFC FIRST Bank"].map((b) => (
+                      <option key={b} value={b}>{b}</option>
+                    ))}
+                  </select>
+                </label>
+                <p className="mt-3 text-xs text-muted-foreground">You'll be redirected to your bank's secure login to complete the payment.</p>
               </div>
             )}
 
