@@ -62,7 +62,7 @@ export function FloatingActions() {
         </a>
         <button
           aria-label="Open chat"
-          title="Any help?"
+          title="Any Help? Click Here"
           onClick={() => setOpen((v) => !v)}
           className="h-14 w-14 rounded-full bg-fire-gradient text-accent-foreground flex items-center justify-center shadow-fire animate-pulse-ring hover:scale-105 transition-smooth"
         >
