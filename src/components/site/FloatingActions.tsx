@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, Phone, X, Send, Flame } from "lucide-react";
+import { MessageCircle, Phone, X, Send, Bot } from "lucide-react";
 
 type Msg = { role: "user" | "bot"; text: string };
 
