@@ -54,19 +54,19 @@ export function FloatingActions() {
         </a>
         <a
           href="tel:+919841781060"
-          aria-label="Call +91 98417 81060"
-          className="h-12 pl-3 pr-4 rounded-full bg-primary text-primary-foreground flex items-center gap-2 shadow-lg hover:scale-105 transition-smooth"
+          aria-label="Call"
+          title="Call"
+          className="h-14 w-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg hover:scale-105 transition-smooth"
         >
           <Phone className="h-5 w-5" />
-          <span className="text-sm font-semibold whitespace-nowrap">+91 98417 81060</span>
         </a>
         <button
           aria-label="Open chat"
+          title="Any help?"
           onClick={() => setOpen((v) => !v)}
-          className="h-12 pl-3 pr-4 rounded-full bg-fire-gradient text-accent-foreground flex items-center gap-2 shadow-fire animate-pulse-ring hover:scale-105 transition-smooth"
+          className="h-14 w-14 rounded-full bg-fire-gradient text-accent-foreground flex items-center justify-center shadow-fire animate-pulse-ring hover:scale-105 transition-smooth"
         >
           {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-          <span className="text-sm font-semibold whitespace-nowrap">AssistMe</span>
         </button>
       </div>
 
