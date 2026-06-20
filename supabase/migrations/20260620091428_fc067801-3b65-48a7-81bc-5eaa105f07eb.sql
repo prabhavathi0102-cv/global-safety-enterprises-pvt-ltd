@@ -1,0 +1,1 @@
+CREATE POLICY "Deny all client access" ON public.payments AS RESTRICTIVE FOR ALL TO authenticated, anon USING (false) WITH CHECK (false);
