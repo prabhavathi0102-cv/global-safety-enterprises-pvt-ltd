@@ -61,7 +61,7 @@ function Dashboard() {
 
   async function doExport() {
     try {
-      const { csv } = await exportFn({ data: undefined as unknown as Record<string, never> });
+      const { csv } = await exportFn();
       const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
